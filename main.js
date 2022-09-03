@@ -2,15 +2,7 @@
 const tileColumns = 8 + Math.floor(Math.random() * 4);
 const tileRows = tileColumns;
 
-const maxColors = 5;
-
-// const generateDifferentColorIndices = (/** @type {{ amount: number }} */ { amount }) => {
-// 	const colorIndexArray = [];
-// 	for (let i = 0; i < amount; i++) {
-
-// 	}
-// 	return colorIndexArray;
-// };
+const maxColors = 4;
 
 const generateTile = (/** @type {{ x: number, y: number, width: number, height: number, depth: number }} */ { x, y, width, height, depth }) => {
 	let string = "";
@@ -152,7 +144,6 @@ svg.documentElement.style.setProperty("--random-1", Math.random().toString());
 svg.documentElement.style.setProperty("--random-2", Math.random().toString());
 svg.documentElement.style.setProperty("--random-3", Math.random().toString());
 
-// document.querySelector(".svg-container").innerHTML = svg;
 document.documentElement.style.setProperty("--background-image", `url("${URL.createObjectURL(new Blob([svg.documentElement.outerHTML], { type: "image/svg+xml" }))}")`);
 
 console.timeEnd();
