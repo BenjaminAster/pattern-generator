@@ -9,7 +9,7 @@ import generatePattern from "https://benjaminaster.github.io/pattern-generator/m
 
 const { SVG } = await generatePattern();
 ```
-`generatePattern()` also return the accent color hue as a number between 0 and 1:
+`generatePattern()` also returns the accent color hue as a number between 0 and 1:
 ```javascript
 const { SVG, accentColorHue } = await generatePattern();
 ```
