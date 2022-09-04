@@ -1,0 +1,74 @@
+<svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		:root {
+			color-scheme: dark;
+			--color-1: white;
+			--color-2: deepSkyBlue;
+		}
+		
+		@media (prefers-color-scheme: light) {
+			:root {
+				color-scheme: light;
+				--color-1: black;
+				--color-2: blue;
+			}
+		}
+
+		.color-1 {
+			fill: var(--color-1);
+		}
+
+		.color-2 {
+			fill: var(--color-2);
+		}
+	</style>
+
+	<path class="color-2" d="
+		M 0 240
+		a 240 240 0 0 1 240 -240
+		a 240 240 0 0 1 -240 240
+		Z
+	" />
+	
+	<circle class="color-1" cx="300" cy="60" r="60" />
+	
+	<path class="color-2" d="
+		M 480 0
+		v 120
+		l -120 -120
+		Z
+	" />
+
+	<path class="color-2" d="
+		M 240 120
+		a 120 120 0 0 1 120 120
+		h -120
+		Z
+	" />
+	
+	<path class="color-1" d="
+		M 360 240
+		a 120 120 0 0 1 120 -120
+		v 60
+		a 60 60 0 0 0 -60 60
+		Z
+	" />
+
+	<path class="color-1" d="
+		M 120 240
+		a 120 120 0 1 1 0 240
+		a 120 120 0 1 1 0 -240
+		Z
+		m 0 60
+		a 60 60 0 1 0 0 120
+		a 60 60 0 1 0 0 -120
+		z
+	" />
+
+	<path class="color-2" d="
+		M 240 240
+		l 240 240
+		h -240
+		Z
+	" />
+</svg>
